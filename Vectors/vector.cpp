@@ -45,11 +45,24 @@ void explain_vector()
         cout << *(it2) << ", ";
     }
 
+    // Insert elements
+    v.insert(v.begin(), 0);
+    v.insert(v.begin() + 1, 2, 3);
+
     cout << "\nPrinting using forEach : ";
     for (auto it2 : v)
     {
         cout << it2 << ", ";
     }
+
+    // Erase elements
+    v.erase(v.begin());
+    v.erase(v.begin(), v.begin() + 2);
+
+    // Get size and capacity
+    cout << "Size: " << v.size() << endl;
+    cout << "Empty: " << v.empty() << endl;
+    cout << "Capacity: " << v.capacity() << endl;
 }
 
 int main()
