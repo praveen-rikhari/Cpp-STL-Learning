@@ -25,6 +25,14 @@ void explain_pair()
     {
         cout << "p3 is less than p4" << endl;
     }
+
+    // Nested Pair
+    pair<int, pair<int, int>> nestedPair = {10, {45, 18}};
+    cout << "Nested Pair: " << nestedPair.first << ", (" << nestedPair.second.first << ", " << nestedPair.second.second << ")" << endl;
+
+    // Pair Array
+    pair<int, int> arr[] = {{1, 2}, {3, 4}, {5, 6}};
+    cout << "Pair Array : " << arr[1].second << endl;
 }
 
 int main()
