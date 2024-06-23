@@ -23,6 +23,14 @@ void explain_vector()
 
     // Remove elements
     vec1.pop_back();
+
+    // vector iterator
+    vector<int>::iterator it = v.begin();
+    it++;
+    cout << *(it) << endl;
+
+    it = it + 2;
+    cout << *(it) << endl;
 }
 
 int main()
