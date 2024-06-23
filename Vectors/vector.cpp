@@ -31,6 +31,25 @@ void explain_vector()
 
     it = it + 2;
     cout << *(it) << endl;
+
+    // printing the vector
+    cout << "Printing using vector iterator : ";
+    for (vector<int>::iterator it2 = v.begin(); it2 != v.end(); it2++)
+    {
+        cout << *(it2) << ", ";
+    }
+
+    cout << "\nPrinting using auto dataType : ";
+    for (auto it2 = v.begin(); it2 != v.end(); it2++)
+    {
+        cout << *(it2) << ", ";
+    }
+
+    cout << "\nPrinting using forEach : ";
+    for (auto it2 : v)
+    {
+        cout << it2 << ", ";
+    }
 }
 
 int main()
