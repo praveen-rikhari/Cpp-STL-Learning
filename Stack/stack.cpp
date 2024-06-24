@@ -34,11 +34,23 @@ void explain_stack()
         cout << "Stack is not empty" << endl;
     }
 
-    // Pop all elements
+    // copying elements of stack1 to stack2
+    stack<int> stk2(stk);
+
+    // Pop all elements of stack 1
+    cout << "Stack 1 : ";
     while (!stk.empty())
     {
-        cout << "Popping element: " << stk.top() << endl;
+        cout << stk.top() << ", ";
         stk.pop();
+    }
+
+    // Pop all elements of stack 1
+    cout << "Stack 2 : ";
+    while (!stk2.empty())
+    {
+        cout << stk2.top() << ", ";
+        stk2.pop();
     }
 }
 
